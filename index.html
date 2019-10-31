@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MARKUP</title>
+    
+    <link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css?ver=5.8.2">
+ 
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
+</head>
+<body class="drawer">
+    <!-- header -->
+    <header id="header">
+        <div class="inner">
+
+            <div class="header-logo"><a href="/"><img src="img/logo.png" alt=""></a></div>
+            
+            <!-- header-nav -->
+               <nav class="header-nav">
+                   
+                       <ul class="header-list">
+                           <li class="m_icon1 menu-item"><a href="#skills">Skills</a></li>
+                           <li class="m_icon2 menu-item"><a href="#content">Works</a></li>
+                           <li class="m_icon3 menu-item"><a href="#">About</a></li>
+                           <li class="m_icon4 menu-item"><a href="#">Contact</a></li>
+                       </ul>
+                
+               </nav><!-- //header-nav-->
+
+        </div><!-- //inner-->
+    </header>
+
+    <!-- style="background-image:url(img/grape.jpg)" -->
+    <div id="mv">
+        <div class="mv-content">
+            
+            <div class="back1"></div>
+            <div class="back"></div>
+            <div class="name">
+                <p>I'm Yuki.</p>
+            </div>
+            <div class="name">
+                <p>Welcome to My Portfolio site.</p>
+            </div>
+            <div class="name">
+                <p>...Ready to know about me?</p>
+            </div>
+            <div class="back"></div>
+            <div class="back"></div>
+            <div class="back"></div>
+            <div class="back"></div>
+        </div>
+    </div>
+
+    <!-- skills -->
+     <div id="skills">
+         <div class="inner">
+　　　　　　　<h2 class="skills-title">
+                Skills
+              </h2>
+
+            <div class="skills-items">
+                <!-- skills-item -->
+                <div class="skills-item">
+                    <div class="skills-item-title html">
+                        <h3>HTML/CSS</h3>      
+                    </div>
+                    <div class="triangle"></div>
+                    <div class="skills-info">
+                        <p>基本のコーディングが可能。レスポンシブデザインにも対応。</p>
+                    </div>
+                </div><!-- //skills-item-->
+                  
+                <!-- skills-item -->
+                <div class="skills-item">
+                    <div class="skills-item-title js">
+                        <h3>JS/JQ</h3>      
+                    </div>
+                    <div class="triangle"></div>
+                    <div class="skills-info">
+                        <p>アニメーション。サイトに動きを加えメリハリを付けます。</p>
+                    </div>
+                </div><!-- //skills-item-->
+                  
+                <!-- skills-item -->
+                <div class="skills-item">
+                    <div class="skills-item-title php">
+                        <h3>WordPress</h3>      
+                    </div>
+                    <div class="triangle"></div>
+                    <div class="skills-info">
+                        <p>WordPressの導入。</p>
+                    </div>
+                </div><!-- //skills-item-->
+                  
+            </div><!-- //skills-items -->　　
+  
+
+         </div>
+     </div><!-- //skills-->
+   
+
+     <!-- content ”works”-->
+      <div id="content">
+          <div class="inner">
+              <h2 class="content-title">
+                  Works
+              </h2>
+            <!-- primary -->
+            <main id="primary">
+                
+                <!-- entries -->
+                <div class="entries">
+
+                 <!-- entry-item   -->
+                   <a href="#" class="entry-item">
+                       <div class="entry-item-img">
+                           <img src="img/bootstrap.png" alt="">
+                       </div>
+                   </a><!-- //entry-item -->
+                 <!-- entry-item   -->
+                   <a href="#" class="entry-item">
+                       <div class="entry-item-img">
+                           <img src="img/bootstrap.png" alt="">
+                       </div>
+                   </a><!-- //entry-item -->
+                 <!-- entry-item   -->
+                   <a href="#" class="entry-item">
+                       <div class="entry-item-img">
+                           <img src="img/bootstrap.png" alt="">
+                       </div>
+                   </a><!-- //entry-item -->
+                 <!-- entry-item   -->
+                   <a href="#" class="entry-item">
+                       <div class="entry-item-img">
+                           <img src="img/bootstrap.png" alt="">
+                       </div>
+                   </a><!-- //entry-item -->
+
+                </div> <!-- //entries -->
+            </main><!-- //primary -->
+          </div> <!-- //inner -->
+        </div><!-- //content -->
+        
+    
+
+         
+<div class="totop">
+        <i class="fas fa-angle-double-up"></i>
+</div>
+
+<footer id="footer">
+    <div class="copy">©Copyright | Yuki Ito 2019 All Right Reserved</div>
+</footer>
+
+<!-- topに戻る -->
+<script>
+        $(".fa-angle-double-up").click(function() {
+          $('body, html').animate({scrollTop: 0}, 300, 'linear');
+        });
+    </script>
+
+  <!-- ドロワーメニューの利用宣言 -->
+  <script>
+        $(document).ready(function() {
+        $('.drawer').drawer();
+      });
+      </script>
+</body>
+</html>
